@@ -1,9 +1,9 @@
 require('dotenv').config();
-import * as express from 'express';
+import express = require('express');
 import auth from './routes/auth';
 import links from './routes/link';
 import redirect from './routes/redirect';
-import mongoose = require('mongoose');
+import mongoose = require("mongoose");
 import path = require('path');
 
 const PORT = process.env.PORT || 5000;
